@@ -5,21 +5,21 @@
 class Mcpx < Formula
   desc "Universal MCP relay that aggregates multiple MCP servers behind meta-tools"
   homepage "https://github.com/fieldjoshua/mcp-relay"
-  version "1.1.0"
+  version "1.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fieldjoshua/mcp-relay/releases/download/v1.1.0/mcpx_1.1.0_darwin_amd64.tar.gz"
-      sha256 "9722b4f074aa4bcfe50d75f57cc7ff30c6baea3599da92388d337045203a9ffb"
+      url "https://github.com/fieldjoshua/mcp-relay/releases/download/v1.2.0/mcpx_1.2.0_darwin_amd64.tar.gz"
+      sha256 "5d244152470f054e49eb922296280ae220e35a168c5253cdee934a1aec2abeb6"
 
       def install
         bin.install "mcpx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fieldjoshua/mcp-relay/releases/download/v1.1.0/mcpx_1.1.0_darwin_arm64.tar.gz"
-      sha256 "d803642a7f0ad00773e191b2a3174800cf398035e290115bcaf048856985c93b"
+      url "https://github.com/fieldjoshua/mcp-relay/releases/download/v1.2.0/mcpx_1.2.0_darwin_arm64.tar.gz"
+      sha256 "07732ea29d820f0da67b076ac944ff2f9650a94cd79e9cd22a887723c71f641e"
 
       def install
         bin.install "mcpx"
@@ -29,15 +29,15 @@ class Mcpx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fieldjoshua/mcp-relay/releases/download/v1.1.0/mcpx_1.1.0_linux_amd64.tar.gz"
-      sha256 "489997ba3e12976ea3f199ed2d7d9e14757e75896baba792e973cc88502a1b0f"
+      url "https://github.com/fieldjoshua/mcp-relay/releases/download/v1.2.0/mcpx_1.2.0_linux_amd64.tar.gz"
+      sha256 "05fa5d7975fb96f8acc5ade78a3db0738dbf7fe7b6a9e1201f26b042f2c75506"
       def install
         bin.install "mcpx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fieldjoshua/mcp-relay/releases/download/v1.1.0/mcpx_1.1.0_linux_arm64.tar.gz"
-      sha256 "414de5afeb695dc4046381bb5f59c313d8b0247b4f1fc8755fa2373ae81401d7"
+      url "https://github.com/fieldjoshua/mcp-relay/releases/download/v1.2.0/mcpx_1.2.0_linux_arm64.tar.gz"
+      sha256 "f6fde7878ca2007b68372e21a470511046ed15fb01722932a4f0b3251f4b9894"
       def install
         bin.install "mcpx"
       end
